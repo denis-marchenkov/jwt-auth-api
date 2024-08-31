@@ -18,7 +18,9 @@ builder.Services.AddSingleton<JwtTokenProvider>();
 
 builder.Services.AddEndpointsApiExplorer();
 
+
 # region swagger auth
+
 builder.Services.AddSwaggerGen(x =>
 {
     x.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, new OpenApiSecurityScheme
@@ -45,7 +47,9 @@ builder.Services.AddSwaggerGen(x =>
         }
     });
 });
+
 #endregion
+
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(x =>

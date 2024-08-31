@@ -1,9 +1,6 @@
 ﻿using JwtAuthApi.Db;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
-using System.Collections.Generic;
-
 using System.Security.Claims;
 using System.Text;
 
